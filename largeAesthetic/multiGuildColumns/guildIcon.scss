@@ -1,0 +1,24 @@
+// Styles for the individual guild icons
+
+div[class^="guild-"] {
+  margin-left: 8px;
+  margin-top: 8px;
+  &[class*="selected-"]:before {
+    display: none;
+  }
+  &[class*="unread-"]::before {
+    left: -2px;
+    top: 5px;
+    z-index: 9000;
+
+    height: 10px;
+    margin-top: -6px;
+    background-color: #8a8e94;
+  }
+  &:first-child {
+    position: relative;
+    left: 0;
+    margin: auto;
+    margin-top: 15px;
+  }
+}

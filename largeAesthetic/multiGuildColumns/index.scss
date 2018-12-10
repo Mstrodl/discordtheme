@@ -1,0 +1,29 @@
+/*
+multiple guild columns
+first one of these has two columns, second one three
+uncomment / comment the one you want.
+*/
+
+div[class^="guildsWrapper-"] {
+  @import "./settings.scss";
+  width: 187.5px;
+
+  .scroller-wrap {
+    width: 225px;
+  }
+
+  /* other stuff for columns */
+
+  div[class^="guilds-"] {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0;
+    align-content: flex-start;
+
+    @import "./dmList";
+
+    @import "./upperFix";
+
+    @import "./guildIcon";
+  }
+}

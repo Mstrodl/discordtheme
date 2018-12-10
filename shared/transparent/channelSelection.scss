@@ -1,0 +1,36 @@
+[class*="contentSelectedVoice-"],
+[class*="contentSelectedText-"] {
+  background: $selected-channel-bg !important;
+}
+
+[class*="wrapperHoveredVoice-"],
+[class*="wrapperHoveredText-"] {
+  background: transparent !important;
+}
+
+[class*="contentHoveredVoice-"],
+[class*="contentHoveredText-"] {
+  background: $hovering-channel-bg !important;
+}
+
+[class*="nameDefaultText-"],
+[class*="nameDefaultVoice-"],
+[class*="nameLockedText-"],
+[class*="nameLockedVoice-"] {
+  color: $channel-name-color !important;
+}
+
+[class*="channel-"] {
+  &[class*="selected-"] a {
+    background-color: $selected-channel-bg !important;
+  }
+  &:hover a {
+    background-color: $hovering-channel-bg !important;
+  }
+
+  &:not(:hover):not([class*="selected-"]) {
+    a [class*="name-"] {
+      color: $channel-name-color !important;
+    }
+  }
+}

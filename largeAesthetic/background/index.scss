@@ -1,0 +1,16 @@
+@import "./settings";
+
+html:after {
+  z-index: -10000;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $background;
+  background-size: cover;
+  filter: $background-filters;
+}

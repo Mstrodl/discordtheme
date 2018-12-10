@@ -1,0 +1,18 @@
+.scroller-wrap,
+.scroller {
+  &::-webkit-scrollbar {
+    width: $scrollbar-width !important;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: $scrollbar-width !important;
+    border-radius: $scrollbar-width !important;
+    background-color: $scrollbar-thumb !important;
+    border: $scrollbar-thumb !important;
+  }
+  &::-webkit-scrollbar-track-piece {
+    width: $scrollbar-width !important;
+    background-color: $scrollbar-background !important;
+    border: $scrollbar-background !important;
+    border-radius: 0 !important;
+  }
+}

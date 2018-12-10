@@ -1,0 +1,7 @@
+[class*="guildsWrapper-"] {
+  background-color: $guild-list-bg !important;
+}
+
+[class*="guildSeperator-"]:after {
+  background: rgba(0, 0, 0, 0.1) !important;
+}

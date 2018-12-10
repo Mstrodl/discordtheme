@@ -1,0 +1,21 @@
+@import "./settings";
+
+// App
+#app-mount,
+[class*="layers-"],
+[class*="layer-"],
+.app
+  > [class*="layers-"]
+  > [class*="layer-"]
+  > [class*="container-"][class*="flex-"] {
+  background: $main-bg !important;
+}
+
+@import "./messagePane";
+@import "./channelList";
+@import "./memberList";
+@import "./guildList";
+@import "./channelTitlebar";
+@import "./codeblock";
+@import "./channelSelection";
+@import "./scroller";

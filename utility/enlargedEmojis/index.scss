@@ -1,0 +1,10 @@
+// Enlarges emojis on hover
+
+div[class^="markup-"] .emoji {
+  transition: width 0.5s ease;
+}
+
+div[class^="markup-"] .emoji:hover {
+  height: 128px;
+  width: 128px;
+}

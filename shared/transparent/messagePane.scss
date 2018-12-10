@@ -1,0 +1,16 @@
+// Message area+input
+[class*="messagesWrapper-"],
+// Entire right pane, message area+input+member list+topic/channel name bar
+[class*="chat-"],
+// Right pane but not top bar; message area+input+member list
+[class*="content-"],
+// Message input area
+[class*="chat-"] form,
+// Typing indicator below textarea
+[class*="chat-"] form [class*="typing-"] {
+  background: $message-pane-bg !important;
+}
+
+[class*="timestampCozy-"] {
+  color: $timestamp-color !important;
+}
