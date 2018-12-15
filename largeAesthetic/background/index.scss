@@ -1,5 +1,6 @@
 @import "./settings";
 
+#app-mount > [class*="app-"] > [class*="container-"]:after,
 html:after {
   z-index: -10000;
   content: " ";
