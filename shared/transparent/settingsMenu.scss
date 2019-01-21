@@ -1,0 +1,13 @@
+[class*="standardSidebarView-"],
+[class*="contentRegion-"] {
+  background: $main-bg !important;
+}
+
+[class*="sidebarRegion-"] {
+  background: $guild-list-bg !important;
+}
+
+[class*="description-"],
+[class*="labelDescriptor-"] {
+  color: $channel-name-color !important;
+}

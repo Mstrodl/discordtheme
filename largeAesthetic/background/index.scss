@@ -14,4 +14,19 @@ html:after {
   background: $background;
   background-size: cover;
   filter: $background-filters;
+  // animation: background-animate infinite alternate step-end 2560000s;
 }
+
+// @keyframes background-animate {
+//   $max: 9999;
+//   $now: random(9999);
+//   @for $i from 0 through $max {
+//     #{100% * $i / $max} {
+//       $prev: $i - 1;
+//       $next: $i + 1;
+//       background: url("https://picsum.photos/1920/1080?random&_=#{$now$i}"),
+//         url("https://picsum.photos/1920/1080?random&_=#{$now$prev}"),
+//         url("https://picsum.photos/1920/1080?random&_=#{$now$next}");
+//     }
+//   }
+// }

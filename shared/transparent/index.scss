@@ -4,7 +4,7 @@
 #app-mount,
 [class*="layers-"],
 [class*="layer-"],
-.app
+[class*="app-"]
   > [class*="layers-"]
   > [class*="layer-"]
   > [class*="container-"][class*="flex-"] {
@@ -20,3 +20,6 @@
 @import "./channelSelection";
 @import "./scroller";
 @import "./loaderScreen";
+@import "./settingsMenu";
+@import "./friends";
+@import "./popouts";

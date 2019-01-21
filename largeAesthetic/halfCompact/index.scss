@@ -3,7 +3,7 @@ half compact mode
 puts avatars and display names on one line, making avatars smaller
 */
 
-.scroller,
+div[class*="scroller-"],
 .search-result-message {
   @import "./settings";
   div[class*="messageCozy-"][aria-disabled="true"] {

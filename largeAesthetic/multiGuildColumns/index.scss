@@ -4,17 +4,17 @@ first one of these has two columns, second one three
 uncomment / comment the one you want.
 */
 
-div[class^="guildsWrapper-"] {
+div[class*="guildsWrapper-"] {
   @import "./settings.scss";
   width: 187.5px;
 
-  .scroller-wrap {
+  [class*="scrollerWrap-"] {
     width: 225px;
   }
 
   /* other stuff for columns */
 
-  div[class^="guilds-"] {
+  div[class*="guilds-"] {
     display: flex;
     flex-flow: row wrap;
     padding-left: 0;

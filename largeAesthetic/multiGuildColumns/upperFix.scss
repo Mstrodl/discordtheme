@@ -11,7 +11,7 @@
 /* These are for servercount ext :eyes: */
 @if $servercount {
   [class*="friendsOnline"] {
-    left: 13%;
+    padding-left: 13%;
   }
 
   .server-count {

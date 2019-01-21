@@ -1,6 +1,5 @@
 // Channel list pane; guild name+channel list
 [class*="channels-"],
-
 // just channel list
 [class*="channels-"] > [class*="container-"][class*="flex-"][class*="noWrap-"] {
   background: $channel-list-bg !important;

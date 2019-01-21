@@ -1,0 +1,10 @@
+#friends {
+  background: $message-pane-bg !important;
+  [class*="headerBar-"] {
+    background: $channel-title-bg !important;
+  }
+}
+
+[class*="text-"] {
+  color: $text-color !important;
+}
