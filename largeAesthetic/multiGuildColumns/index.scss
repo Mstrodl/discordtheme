@@ -1,15 +1,10 @@
-/*
-multiple guild columns
-first one of these has two columns, second one three
-uncomment / comment the one you want.
-*/
-
 div[class*="guildsWrapper-"] {
   @import "./settings.scss";
-  width: 187.5px;
+  content: $guild-columns;
+  width: calc(62.5px * #{$guild-columns}); // 187.5px;
 
   [class*="scrollerWrap-"] {
-    width: 225px;
+    width: calc(75px * #{$guild-columns}); // 225px;
   }
 
   /* other stuff for columns */
