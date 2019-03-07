@@ -1,4 +1,5 @@
-div[class*="guildsWrapper-"] {
+div[class*="flex-"][class*="flex-"][class*="horizontal-"][class*="horizontal-"][class*="directionRow-"][class*="justifyStart-"][class*="alignStretch-"][class*="noWrap-"][class*="container-"][class*="firefoxFixScrollFlex-"] > div[class^="wrapper-"] {
+  // div[class*="guildsWrapper-"] {
   @import "./settings.scss";
   content: $guild-columns;
   width: calc(62.5px * #{$guild-columns}); // 187.5px;
@@ -9,7 +10,7 @@ div[class*="guildsWrapper-"] {
 
   /* other stuff for columns */
 
-  div[class*="guilds-"] {
+  div[class*="scroller-"] {
     display: flex;
     flex-flow: row wrap;
     padding-left: 0;

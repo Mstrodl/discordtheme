@@ -1,8 +1,10 @@
 // Styles for the individual guild icons
 
-div[class^="guild-"] {
+div[class^="container-"] {
   margin-left: 8px;
   margin-top: 8px;
+  margin-bottom: 0;
+  margin-right: 0;
   &[class*="selected-"]:before {
     display: none;
   }
