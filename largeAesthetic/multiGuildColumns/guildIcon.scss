@@ -1,11 +1,73 @@
 // Styles for the individual guild icons
 
-div[class^="container-"] {
-  margin: 4px;
+div[class^="container-"],
+div[class^="listItem-"] {
+  // margin-bottom: 4px;
+  // margin-right: 4px;
+  // width: 50px;
+  margin: 2px auto;
+  width: auto;
+
+  &:nth-of-type(1) {
+    width: 100%;
+    [class^="pill-"] {
+      display: none;
+    }
+  }
 
   &[class*="selected-"]:before {
     display: none;
   }
+
+  [class^="blobContainer-"],
+  [class^="blob-"] {
+    transform: none;
+
+    svg mask rect:nth-child(3) {
+      display: none;
+    }
+  }
+
+  [class^="badgeWrapper-"] {
+    [class^="lowerBadge-"] {
+      bottom: -2px;
+      right: -2px;
+    }
+  }
+
+  [class^="pill-"] {
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    & > span {
+      left: 4px;
+      top: 0;
+      height: 10px !important;
+      width: 10px !important;
+      background: #8a8e94;
+      border-radius: 100% !important;
+
+      transform: none !important;
+
+      z-index: 999;
+    }
+  }
+
+  // Fuck off discord.
+  &:hover [class^="pill-"] span {
+    opacity: 0 !important;
+  }
+
+  &:not(:hover) [class^="pill-"] span {
+    opacity: 0 !important;
+
+    &[style^="opacity: 0.7"],
+    &[style^="opacity: 1"] {
+      opacity: 1 !important;
+    }
+  }
+
   &[class*="unread-"]::before {
     left: -2px;
     top: 5px;
@@ -21,4 +83,18 @@ div[class^="container-"] {
     margin: auto;
     margin-top: 15px;
   }
+
+  foreignObject img {
+    background: #2f3136;
+  }
+
+  [class^="guildSeparator-"] {
+    width: calc(#{$guild-list-width} - 24px);
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+div[style] > div[class^="listItem-"] {
+  width: 54px;
 }

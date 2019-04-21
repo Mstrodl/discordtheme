@@ -1,3 +1,7 @@
-[class*="title-"][class*="headerBar-"] {
+[class*="title-"] {
   background: $channel-title-bg !important;
+
+  [class^="children-"]::after {
+    background: none;
+  }
 }
