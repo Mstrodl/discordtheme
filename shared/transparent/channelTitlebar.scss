@@ -1,4 +1,4 @@
-[class*="title-"] {
+[class*="chat-"] > [class*="title-"] {
   background: $channel-title-bg !important;
 
   [class^="children-"]::after {

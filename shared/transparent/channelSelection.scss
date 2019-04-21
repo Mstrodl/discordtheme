@@ -1,5 +1,4 @@
-[class*="contentSelectedVoice-"],
-[class*="contentSelectedText-"] {
+[class*="modeSelected-"] > div {
   background: $selected-channel-bg !important;
 }
 
