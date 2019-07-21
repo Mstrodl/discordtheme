@@ -17,13 +17,17 @@ div[class*="scroller-"],
     margin-left: $indent-amount;
   }
 
-  div[class*="wrapper-"][class*="large-"][class*="avatar-"],
-  div[class*="image-"][class*="large-"] {
-    background-size: contain;
+  div[class*="messageCozy-"] div[class*="avatar-"] {
     margin: 0;
-    height: $header-height;
-    width: $header-height;
-    border-radius: $avatar-radius;
+
+    & > div[class*="wrapper-"][role="img"] {
+      height: $header-height !important;
+      width: $header-height !important;
+      foreignObject {
+        border-radius: $avatar-radius;
+        mask: none;
+      }
+    }
   }
 
   h2[class*="headerCozyMeta-"] {
