@@ -1,7 +1,9 @@
 // Styles for the individual guild icons
 
 div[class^="container-"],
-div[class^="listItem-"] {
+div[class^="listItem-"],
+// server folders use wrapper... whyy
+& > div[class^="wrapper-"] {
   // margin-bottom: 4px;
   // margin-right: 4px;
   // width: 50px;
