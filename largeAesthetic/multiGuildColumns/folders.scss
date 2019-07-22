@@ -1,0 +1,17 @@
+span[class*="expandedFolderBackground-"] {
+  left: 0;
+  top: 12.5px;
+  width: calc(100% - 5.6px);
+  margin-bottom: -3.5px;
+}
+
+div[class*="expandedGuilds-"] {
+  // get rid of the huge empty space at the bottom. hackily.
+  margin-bottom: -20px;
+  display: inline;
+  height: unset !important;
+}
+
+& > div[class*="listItem-"] {
+  margin-right: 4.5px;
+}

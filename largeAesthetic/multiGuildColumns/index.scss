@@ -9,7 +9,8 @@ div[class*="flex-"][class*="flex-"][class*="horizontal-"][class*="horizontal-"][
   // div[class*="guildsWrapper-"] {
   @import "./settings.scss";
 
-  $guild-list-width: calc(58px * #{$guild-columns});
+  $guild-icon-width: 58px;
+  $guild-list-width: calc(#{$guild-icon-width} * #{$guild-columns});
 
   &,
   & [class*="scrollerWrap-"] {
