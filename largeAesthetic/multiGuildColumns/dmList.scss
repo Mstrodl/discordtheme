@@ -18,3 +18,10 @@ span[class^="dms-"] {
     position: relative;
   }
 }
+
+& > div[style^="opacity:"]:not([class]) {
+  margin: 0;
+  &:nth-child(#{$guild-columns}n+2) {
+    margin-left: 3.656px;
+  }
+}
