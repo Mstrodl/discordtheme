@@ -1,7 +1,7 @@
 span[class*="expandedFolderBackground-"] {
   left: 0;
-  top: 12.5px;
-  width: calc(100% - 5.6px);
+  top: 0;
+  width: 100%;
   margin-bottom: -3.5px;
 }
 
@@ -10,8 +10,16 @@ div[class*="expandedGuilds-"] {
   margin-bottom: -20px;
   display: inline;
   height: unset !important;
+
+  div[class*="listItem-"] {
+    &:first-child {
+      margin-left: 6px;
+    }
+    margin: 0 2px;
+    width: 48px;
+  }
 }
 
 & > div[class*="listItem-"] {
-  margin-right: auto;
+  width: 48px;
 }
