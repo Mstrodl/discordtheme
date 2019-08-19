@@ -34,13 +34,13 @@ div[class^="listItem-"],
     display: none;
   }
 
+  svg mask rect {
+    display: none;
+  }
+
   [class^="blobContainer-"],
   [class^="blob-"] {
     transform: none;
-
-    svg mask rect:nth-child(3) {
-      display: none;
-    }
   }
 
   [class^="badgeWrapper-"] {
