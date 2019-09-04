@@ -4,11 +4,24 @@
 #app-mount,
 [class*="layers-"],
 [class*="layer-"],
+[class*="app-"],
 [class*="app-"]
   > [class*="layers-"]
   > [class*="layer-"]
   > [class*="container-"][class*="flex-"] {
   background: $main-bg !important;
+}
+
+.theme-dark {
+  // --background-primary: #{$main-bg};
+  // --background-secondary: #{$guild-list-bg};
+  // --background-tertiary: #{$guild-list-bg};
+  // --deprecated-panel-background: #{$main-bg};
+  --channeltextarea-background: rgba(114, 118, 125, 0.3);
+}
+
+a[name="Nova_Discord"] div {
+  --background-primary: #36393f;
 }
 
 @import "./messagePane";

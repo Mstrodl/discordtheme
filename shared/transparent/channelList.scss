@@ -1,6 +1,12 @@
 // Channel list pane; guild name+channel list
 [class*="channels-"],
+// channel list in DMs
+[class*="privateChannels-"],
 // just channel list
 [class*="channels-"] > [class*="container-"] {
+  background: $channel-list-bg !important;
+}
+
+[class*="panels-"] {
   background: $channel-list-bg !important;
 }
