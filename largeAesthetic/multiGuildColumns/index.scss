@@ -4,7 +4,11 @@
   border-radius: 3px;
 }
 
-div[class*="baseLayer-"] div[class^="wrapper-"] {
+div[class*="app-"]
+  > div[class*="layers-"]
+  > div[class*="baseLayer-"]
+  > div[class*="noWrap-"]
+  > div[class^="wrapper-"] {
   // div[class*="guildsWrapper-"] {
   @import "./settings.scss";
 
