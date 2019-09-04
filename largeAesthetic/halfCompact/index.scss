@@ -17,19 +17,6 @@ div[class*="scroller-"],
     margin-left: $indent-amount;
   }
 
-  div[class*="messageCozy-"] div[class*="avatar-"] {
-    margin: 0;
-
-    & > div[class*="wrapper-"][role="img"] {
-      height: $header-height !important;
-      width: $header-height !important;
-      foreignObject {
-        border-radius: $avatar-radius;
-        mask: none;
-      }
-    }
-  }
-
   h2[class*="headerCozyMeta-"] {
     /* span[class*="usernameWrapper-"] { */
     margin-left: $avatar-username-spacing;
@@ -40,6 +27,19 @@ div[class*="scroller-"],
     margin-left: $indent-amount;
     margin-bottom: 0.2em;
     /* vertical-align: bottom; */
+
+    div[class*="avatar-"] {
+      margin: 0;
+
+      & > div[class*="wrapper-"][role="img"] {
+        height: $header-height !important;
+        width: $header-height !important;
+        foreignObject {
+          border-radius: $avatar-radius;
+          mask: none;
+        }
+      }
+    }
   }
 
   // TODO: Please, parent selector :weary:
@@ -53,7 +53,7 @@ div[class*="scroller-"],
   }
 
   h2[class*="headerCozyMeta-"] {
-    margin-top: calc( (#{$header-height} - 1em) / 2);
+    margin-top: calc((#{$header-height} - 1em) / 2);
   }
 
   div[class*="localBotMessage-"] {

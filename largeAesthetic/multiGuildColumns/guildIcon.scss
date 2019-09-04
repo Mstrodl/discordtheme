@@ -41,6 +41,7 @@ div[class^="listItem-"],
   [class^="blobContainer-"],
   [class^="blob-"] {
     transform: none;
+    width: 50px;
   }
 
   [class^="badgeWrapper-"] {
