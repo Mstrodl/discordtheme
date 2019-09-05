@@ -2,11 +2,10 @@
 half compact mode
 puts avatars and display names on one line, making avatars smaller
 */
-
-div[class*="scroller-"],
-.search-result-message {
+div[class*="containerCozyBounded-"],
+div[class*="messageGroupCozy-"] {
   @import "./settings";
-  div[class*="messageCozy-"][aria-disabled="true"] {
+  & > [aria-disabled="true"] {
     padding: 6px 0;
   }
 
@@ -43,9 +42,7 @@ div[class*="scroller-"],
   }
 
   // TODO: Please, parent selector :weary:
-  & > div[class*="containerCozy-"][class*="container-"] {
-    padding: $message-padding 0;
-  }
+  padding: $message-padding 0;
 
   // TODO: Should this have a class?
   hr {
