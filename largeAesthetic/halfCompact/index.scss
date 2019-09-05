@@ -3,7 +3,7 @@ half compact mode
 puts avatars and display names on one line, making avatars smaller
 */
 div[class*="containerCozyBounded-"],
-div[class*="containerCozy-"],
+div[class*="messages-"] > div[class*="containerCozy-"],
 div[class*="messageGroupCozy-"] {
   @import "./settings";
   & > [aria-disabled="true"] {
