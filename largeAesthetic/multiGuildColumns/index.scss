@@ -4,13 +4,16 @@
   border-radius: 3px;
 }
 
-div[class*="flex-"][class*="horizontal-"][class*="directionRow-"][class*="justifyStart-"][class*="alignStretch-"][class*="noWrap-"][class*="container-"]
-  > div[class^="wrapper-"] {
-  @import "./settings.scss";
+@import "./settings.scss";
 
-  $guild-icon-width: 58px;
-  $guild-list-width: calc(#{$guild-icon-width} * #{$guild-columns});
+$guild-icon-width: 58px;
+$guild-list-width: calc(#{$guild-icon-width} * #{$guild-columns});
 
+div[class*="container-"] > div[class*="base-"] {
+  left: $guild-list-width;
+}
+
+div[class*="wrapper-"][class*="guilds-"] {
   &,
   & [class*="scrollerWrap-"] {
     width: $guild-list-width; // 187.5px;
