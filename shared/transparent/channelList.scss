@@ -3,7 +3,7 @@
 // channel list in DMs
 [class*="privateChannels-"],
 // just channel list
-[class*="channels-"] > [class*="container-"] {
+[class*="sidebar-"] > [class*="container-"] {
   background: $channel-list-bg !important;
 }
 
