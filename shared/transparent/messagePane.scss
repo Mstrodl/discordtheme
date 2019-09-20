@@ -2,6 +2,8 @@
 [class*="base-"],
 // Message area+input
 [class*="messagesWrapper-"],
+// Message pane only
+[class*="messages-"],
 // Entire right pane, message area+input+member list+topic/channel name bar
 [class*="chat-"],
 // Right pane but not top bar; message area+input+member list
