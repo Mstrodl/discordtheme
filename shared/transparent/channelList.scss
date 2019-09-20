@@ -6,7 +6,7 @@
 [class*="sidebar-"] {
   background: $channel-list-bg !important;
   & > [class*="container-"],
-  & > [class*="scroller-"] {
+  & > [class*="scrollerWrap-"] > [class*="scroller-"] {
     background: transparent;
   }
 }
