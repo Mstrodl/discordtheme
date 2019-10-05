@@ -1,5 +1,5 @@
 // channel list + messages
-[class*="base-"],
+[class*="base-"]:not([class*="numberBadge-"]),
 // Message area+input
 [class*="messagesWrapper-"],
 // Message pane only
