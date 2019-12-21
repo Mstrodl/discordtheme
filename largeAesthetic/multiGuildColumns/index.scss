@@ -13,7 +13,7 @@ div[class*="container-"] > div[class*="base-"] {
   left: $guild-list-width;
 }
 
-div[class*="wrapper-"][class*="guilds-"] {
+[class*="wrapper-"][class*="guilds-"] {
   &,
   & [class*="scrollerWrap-"] {
     width: $guild-list-width; // 187.5px;

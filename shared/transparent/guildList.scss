@@ -1,4 +1,4 @@
-div[class*="wrapper-"][class*="guilds-"] {
+[class*="wrapper-"][class*="guilds-"] {
   background-color: $guild-list-bg !important;
   & > div[class*="scrollerWrap-"] {
     background: transparent;
