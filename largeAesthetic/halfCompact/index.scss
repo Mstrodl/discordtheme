@@ -1,13 +1,44 @@
+div[class*="messages-"] {
+  &:after {
+    height: 16px;
+  }
+}
+
 /*
 half compact mode
 puts avatars and display names on one line, making avatars smaller
 */
 div[class*="containerCozyBounded-"],
-div[class*="messages-"] > div[class*="containerCozy-"],
+div[class*="messages-"] > div[class*="message-"],
 div[class*="messageGroupCozy-"] {
   @import "./settings";
   & > [aria-disabled="true"] {
     padding: 6px 0;
+  }
+
+  &[class*="mentioned-"] {
+    background-color: unset;
+    &:before {
+      display: none;
+    }
+    div[class*="markup-"] {
+      background-color: var(--background-mentioned);
+      border-left: #faa61a 4px solid;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      margin-left: -6px;
+      padding-left: 2px;
+    }
+  }
+
+  div[class*="buttonContainer-"] {
+    top: 0;
+    div[aria-label^="Add Reaction: "] {
+      display: none;
+    }
+    div[class*="separator-"] {
+      display: none;
+    }
   }
 
   div[class*="contentCozy-"] {
@@ -20,38 +51,42 @@ div[class*="messageGroupCozy-"] {
   h2[class*="headerCozyMeta-"] {
     /* span[class*="usernameWrapper-"] { */
     margin-left: $avatar-username-spacing;
+    margin-top: calc((#{$header-height} - 1em) / 2);
     /* } */
   }
 
-  div[class*="headerCozy-"] {
-    margin-left: $indent-amount;
-    margin-bottom: 0.2em;
+  margin-left: $indent-amount;
+
+  h2[class*="headerCozy-"] {
+    margin-left: 0;
+    // margin-left: $indent-amount;
+    // margin-bottom: 0.2em;
+    padding-left: 0;
     /* vertical-align: bottom; */
 
-    div[class*="avatar-"] {
+    img[class*="avatar-"] {
       margin: 0;
+      height: $header-height !important;
+      width: $header-height !important;
+      border-radius: $avatar-radius;
 
-      & > div[class*="wrapper-"][role="img"] {
-        height: $header-height !important;
-        width: $header-height !important;
-        foreignObject {
-          border-radius: $avatar-radius;
-          mask: none;
-        }
-      }
+      position: unset;
+      top: unset;
+      left: unset;
+      display: inline-block;
+
+      margin-right: 0.25rem;
+      vertical-align: bottom;
     }
   }
 
   // TODO: Please, parent selector :weary:
-  padding: $message-padding 0;
+  // padding: $message-padding 0;
+  padding: 0;
 
   // TODO: Should this have a class?
   hr {
     border: 0 !important;
-  }
-
-  h2[class*="headerCozyMeta-"] {
-    margin-top: calc((#{$header-height} - 1em) / 2);
   }
 
   div[class*="localBotMessage-"] {
