@@ -8,12 +8,14 @@ div[class*="messages-"] {
 half compact mode
 puts avatars and display names on one line, making avatars smaller
 */
-div[class*="containerCozyBounded-"],
-div[class*="messages-"] > div[class*="message-"],
-div[class*="messageGroupCozy-"] {
+div[class*="message-"][class*="cozyMessage-"] {
   @import "./settings";
   & > [aria-disabled="true"] {
     padding: 6px 0;
+  }
+
+  &[class*="groupStart-"] {
+    margin-top: 0.45rem;
   }
 
   &[class*="mentioned-"] {
@@ -69,21 +71,22 @@ div[class*="messageGroupCozy-"] {
     // margin-bottom: 0.2em;
     padding-left: 0;
     /* vertical-align: bottom; */
+    display: inline;
+  }
 
-    img[class*="avatar-"] {
-      margin: 0;
-      height: $header-height !important;
-      width: $header-height !important;
-      border-radius: $avatar-radius;
+  img[class*="avatar-"] {
+    margin: 0;
+    height: $header-height !important;
+    width: $header-height !important;
+    border-radius: $avatar-radius;
 
-      position: unset;
-      top: unset;
-      left: unset;
-      display: inline-block;
+    position: unset;
+    top: unset;
+    left: unset;
+    display: inline-block;
 
-      margin-right: 0.25rem;
-      vertical-align: bottom;
-    }
+    margin-right: 0.25rem;
+    vertical-align: bottom;
   }
 
   // TODO: Please, parent selector :weary:
