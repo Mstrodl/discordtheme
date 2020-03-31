@@ -17,7 +17,7 @@
   }
 }
 
-& > div[class^="wrapper-"] {
+& > div > div[class*="wrapper-"] {
   // I know...
   margin-left: 4px !important;
   margin-bottom: -2px !important;
