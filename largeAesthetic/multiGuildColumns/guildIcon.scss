@@ -25,10 +25,14 @@
   @import "./folders.scss";
 }
 
+div[data-ref-id="guildsnav"] {
+  padding: 0 0 0 4px;
+}
+
 div[class^="container-"],
 div[class^="listItem-"],
-// server folders use wrapper... whyy
-& > div[class^="wrapper-"] {
+// server folders
+& > div > div[role="treeitem"] {
   // margin-bottom: 4px;
   // margin-right: 4px;
   // width: 50px;
