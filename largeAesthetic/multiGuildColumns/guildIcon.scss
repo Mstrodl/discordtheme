@@ -18,24 +18,19 @@
 }
 
 & > div > div[class*="wrapper-"] {
-  // I know...
-  margin-left: 4px !important;
-  margin-bottom: -2px !important;
-
   @import "./folders.scss";
 }
 
 div[data-ref-id="guildsnav"] {
   padding: 0 0 0 4px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 div[class^="container-"],
 div[class^="listItem-"],
 // server folders
 & > div > div[role="treeitem"] {
-  // margin-bottom: 4px;
-  // margin-right: 4px;
-  // width: 50px;
   margin: 2px auto;
   width: auto;
   display: inline-block;
@@ -108,7 +103,6 @@ div[class^="listItem-"],
     position: relative;
     left: 0;
     margin: auto;
-    margin-top: 15px;
   }
 
   foreignObject img {
@@ -123,5 +117,5 @@ div[class^="listItem-"],
 }
 
 div[style] > div[class^="listItem-"] {
-  width: 54px;
+  width: 50px;
 }
