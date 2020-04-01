@@ -5,7 +5,7 @@ span[class*="expandedFolderBackground-"] {
   margin-bottom: -3.5px;
 }
 
-div[role="group"] {
+div[class*="expandedGuilds-"] {
   // get rid of the huge empty space at the bottom. hackily.
   margin-bottom: -20px;
   display: inline;
@@ -15,8 +15,8 @@ div[role="group"] {
     &:first-child {
       margin-left: 6px;
     }
-    margin: 0 2px;
-    width: 48px;
+    margin: 0 auto;
+    width: 54px;
   }
 }
 

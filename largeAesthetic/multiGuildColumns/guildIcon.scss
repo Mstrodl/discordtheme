@@ -17,7 +17,7 @@
   }
 }
 
-& > div > div[class*="wrapper-"] {
+& > div[class*="wrapper-"] {
   @import "./folders.scss";
 }
 
@@ -30,7 +30,7 @@ div[data-ref-id="guildsnav"] {
 div[class^="container-"],
 div[class^="listItem-"],
 // server folders
-& > div > div[role="treeitem"] {
+& > div[class*="wrapper-"][role="group"] {
   margin: 2px auto;
   width: auto;
   display: inline-block;
