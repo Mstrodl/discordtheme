@@ -1,4 +1,5 @@
 // Member list
-[class*="members-"] {
+[class*="members-"],
+[class*="members-"] [class*="listContent-"] {
   background-color: $member-list-bg !important;
 }

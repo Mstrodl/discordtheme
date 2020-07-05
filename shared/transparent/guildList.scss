@@ -1,10 +1,7 @@
 [class*="wrapper-"][class*="guilds-"] {
   background-color: $guild-list-bg !important;
-  & > div[class*="scrollerWrap-"] {
+  & > div[class*="scroller-"] {
     background: transparent;
-    & > div[class*="scroller-"] {
-      background: transparent;
-    }
   }
 }
 

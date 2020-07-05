@@ -17,7 +17,7 @@
   }
 }
 
-div[data-ref-id^="guildsnav-"][role="treeitem"] {
+div[data-ref-id="guildsnav"][role="tree"] > [class*="wrapper-"] {
   @import "./folders.scss";
 }
 
