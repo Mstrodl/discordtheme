@@ -1,0 +1,4 @@
+canvas[class*="mirror-"],
+div[class*="mirror-"][class*="video-"] {
+  transform: unset !important;
+}

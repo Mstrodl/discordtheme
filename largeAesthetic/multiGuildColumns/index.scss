@@ -15,7 +15,7 @@ div[class*="container-"] > div[class*="base-"] {
 
 [class*="wrapper-"][class*="guilds-"] {
   &,
-  & [class*="scrollerWrap-"] {
+  & [class*="scrollerBase-"] {
     width: $guild-list-width; // 187.5px;
   }
 
@@ -34,7 +34,11 @@ div[class*="container-"] > div[class*="base-"] {
     align-content: flex-start;
 
     @if $guild-columns-center {
-      justify-content: center;
+      &,
+      & > div[aria-label] {
+        justify-content: center;
+        width: calc(58px * #{$guild-columns});
+      }
     }
 
     @import "./dmList";

@@ -17,7 +17,9 @@
   }
 }
 
-div[data-ref-id="guildsnav"][role="tree"] > [class*="wrapper-"] {
+// ul[data-list-id="guildsnav"][role="tree"]
+//   [class*="scrollerBase-"]
+& > div[aria-label] > [class*="wrapper-"] {
   @import "./folders.scss";
 }
 
@@ -31,7 +33,7 @@ div[class^="container-"],
 div[class^="listItem-"],
 // server folders
  div[data-ref-id^="guildsnav-"][role="treeitem"] {
-  margin: 2px auto;
+  margin: 2px #{$guild-columns}px;
   width: auto;
   display: inline-block;
 
@@ -102,7 +104,7 @@ div[class^="listItem-"],
   &:first-child {
     position: relative;
     left: 0;
-    margin: auto;
+    // margin: auto;
   }
 
   foreignObject img {
