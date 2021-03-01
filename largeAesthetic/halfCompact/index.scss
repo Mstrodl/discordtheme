@@ -4,6 +4,12 @@ div[class*="messages-"] {
   }
 }
 
+[class*="replyAvatar-"] {
+  @import "./settings";
+  border: none;
+  border-radius: $avatar-radius !important;
+}
+
 /*
 half compact mode
 puts avatars and display names on one line, making avatars smaller
